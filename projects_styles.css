@@ -19,13 +19,13 @@ header {
 
 header a {
     text-decoration: none;
-    color: #39FF14;
+    color: white;
     margin: 0 1em;
     transition: color 0.3s;
 }
 
 header a:hover {
-    color: #FFFFFF;
+    color: #39FF14;
 }
 
 .section {
@@ -38,10 +38,17 @@ header a:hover {
     text-align: center;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.projects-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
     gap: 2em;
+    flex-wrap: wrap;
 }
 
 .project-card {
@@ -50,19 +57,49 @@ header a:hover {
     border: 2px solid #39FF14;
     border-radius: 8px;
     transition: transform 0.3s;
+    width: 300px;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
 }
 
-.timeline {
-    list-style: none;
-    padding: 0;
+.school-history {
+    text-align: center;
 }
 
-.timeline li {
-    margin: 1em 0;
+.school-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 2em auto;
+    max-width: 600px;
+}
+
+.school-box {
+    border: 2px solid #FFFFFF;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #1E1E1E;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.school-box:hover {
+    /* Add hover effect  - make the border green*/
+    border-color: #39FF14;
+}
+
+@media (min-width: 768px) {
+    .school-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .school-grid > .school-box:first-child {
+        grid-column: span 2;
+    }
 }
 
 .contact {
