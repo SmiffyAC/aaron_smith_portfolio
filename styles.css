@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #1E1E1E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: #39FF14;
+    margin: 0 1em;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #FFFFFF;
+}
+
+.section {
+    padding: 4em 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about {
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.project-card {
+    background: #1E1E1E;
+    padding: 1.5em;
+    border: 2px solid #39FF14;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin: 1em 0;
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1E1E1E;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #39FF14;
+    background: #121212;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 1em 2em;
+    border: none;
+    background: #39FF14;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #2ECC71;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1E1E1E;
+    margin-top: 2em;
+}
+
+footer a {
+    color: #39FF14;
+}
