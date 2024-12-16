@@ -1,0 +1,8 @@
+- Use Django
+- Use REM instead of pixels
+- Add a 3D background
+- Change the colour scheme, light with dark blue icons
+- remove the navbar
+- Add some images of the projects with a breif description
+- Add work xp
+- 
